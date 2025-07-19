@@ -33,9 +33,6 @@ pip install -r requirements.txt
 
 Create a .env file with your tokens:
 
-ini
-Копировать
-Редактировать
 TELEGRAM_TOKEN=your_bot_token
 GOOGLE_SHEET_ID=your_sheet_id
 ADMIN_CHAT_ID=your_admin_chat_id
