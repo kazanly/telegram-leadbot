@@ -42,3 +42,7 @@ python main.py
 🧠 Use Case
 This bot is great for digital agencies and freelancers who want to capture leads via Telegram without using paid forms or CRM platforms.
 
+![Bot screenshot](photo_1_2025-07-19_20-40-57.jpg)
+![Bot screenshot](photo_2_2025-07-19_20-40-57.jpg)
+![Bot screenshot](photo_3_2025-07-19_20-40-57.jpg)
+![Bot screenshot](photo_4_2025-07-19_20-40-57.jpg)
