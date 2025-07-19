@@ -1,23 +1,47 @@
-# Lead Capture Telegram Bot
+Lead Capture Telegram Bot
+A simple Telegram bot that collects a user's name, phone number, country, and their selected options.
+It saves the data to Google Sheets and sends a notification to the admin in Telegram.
 
-A simple Telegram bot that collects name, phone number, and a short message from users.  
-It sends the data to a Google Sheet and notifies you in Telegram.
+✨ Features
+Collects leads via step-by-step FSM flow
 
-## ✨ Features
+Multiselect option for service types (Bot / Website / Automation / CRM / Notifications / Database)
 
-- Collects leads via FSM
-- Sends data to Google Sheets
-- Sends notification to admin in Telegram
+Sends data to a Google Sheet
 
-## 🔧 Setup
+Sends instant lead notification to admin in Telegram
 
-1. Clone the repo and install dependencies  
-2. Get `creds.json` from Google Cloud and place it in the root folder  
-3. Set up your sheet with columns: Name | Phone | Message | Timestamp  
-4. Set your bot token and admin ID in `main.py` / `utils.py`
+Supports two languages: 🇬🇧 English / 🇷🇺 Russian
 
-## 🟢 Start
+📁 Files
+main.py — entry point of the bot
 
-```bash
+handlers.py — handles user messages and states
+
+states.py — form steps using FSMContext
+
+utils.py — helper functions (e.g. sending to Telegram & Google Sheets)
+
+requirements.txt — project dependencies
+
+🚀 How to Run
+Clone the repo
+git clone https://github.com/kazanly/telegram-leadbot.git
+
+Install dependencies
+pip install -r requirements.txt
+
+Create a .env file with your tokens:
+
+ini
+Копировать
+Редактировать
+TELEGRAM_TOKEN=your_bot_token
+GOOGLE_SHEET_ID=your_sheet_id
+ADMIN_CHAT_ID=your_admin_chat_id
+Run the bot
 python main.py
-```
+
+🧠 Use Case
+This bot is great for digital agencies and freelancers who want to capture leads via Telegram without using paid forms or CRM platforms.
+
